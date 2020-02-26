@@ -1,0 +1,130 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(252, 240, 224);
+    margin: 0px;
+    text-align: center;
+    color: white;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+      font-size: 350pt;
+      color: rgba(255, 190, 153, 0.75);
+      line-height: 0px;
+      writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: absolute;
+   left: 193px;
+   top: -305px;
+   text-align: center;
+   width: 50%;
+   z-index: 1;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+      color: white;
+      font-size: 30pt;
+      line-height: 1;
+      text-align: center;
+        text-align-last: left;
+        z-index: 2;
+        position: absolute;
+   left: 10px;
+   top: 230px;
+   text-align: center;
+   width: 90%;
+  }
+
+  h3 {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+      color: white;
+      font-size: 20pt;
+      line-height: 0px;
+      text-align: left;
+  }
+
+  p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+      color: white;
+      padding: 0;
+  }
+
+  a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+      color: white;
+      text-decoration: none;
+      padding: 0;
+  }
+
+  #mySketch {
+    height: 250px;
+    width: 800px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flex-container {
+    align-content: center;
+    display: flex;
+    padding: 0px;
+    margin:0px auto;
+    z-index: 3;
+    justify-content: space-around;
+    max-width: 600px;
+    position: sticky;
+  }
+
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .one {
+    background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.1) 85%);
+    padding: 10px;
+    line-height: 1;
+  }
+
+  .two {
+    background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.1) 85%);
+    padding: 10px;
+    line-height: 1;
+  }
+
+  .three {
+    background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.0) 85%);
+    padding: 10px;
+    line-height: 1;
+  }
+
+  footer {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2px;
+    position: absolute;
+   left: 15px;
+   top: 433px;
+   text-align: left;
+   z-index: 3;
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1200px)  {
+    }
