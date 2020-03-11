@@ -102,18 +102,21 @@ body {
   .one {
     background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.1) 85%);
     padding: 10px;
+    margin: 10px;
     line-height: 1;
   }
 
   .two {
     background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.1) 85%);
     padding: 10px;
+    margin: 10px;
     line-height: 1;
   }
 
   .three {
     background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.0) 85%);
     padding: 10px;
+    margin: 10px;
     line-height: 1;
   }
 
