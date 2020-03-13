@@ -20,10 +20,9 @@ body {
       line-height: 0px;
       writing-mode: vertical-lr;
     text-orientation: mixed;
-   position: -webkit-sticky;
-   position: sticky;
+   position: absolute;
    left: 193px;
-   //top: -305px;
+   top: -305px;
    text-align: center;
    width: 50%;
    z-index: 1;
