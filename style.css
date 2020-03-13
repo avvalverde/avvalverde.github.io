@@ -81,7 +81,6 @@ body {
   .flex-container {
     align-content: center;
     display: flex;
-    flex: 1 1 1 0px;
     padding: 0px;
     margin: 0 0 0 380px;
     z-index: 3;
@@ -105,6 +104,7 @@ body {
     padding: 10px;
     margin: 10px;
     line-height: 1;
+    flex: 1 1 0px;
   }
 
   .two {
@@ -112,6 +112,7 @@ body {
     padding: 10px;
     margin: 10px;
     line-height: 1;
+    flex: 1 1 0px;
   }
 
   .three {
@@ -119,6 +120,7 @@ body {
     padding: 10px;
     margin: 10px;
     line-height: 1;
+    flex: 1 1 0px;
   }
 
   footer {
