@@ -1,0 +1,95 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Miles to Kilometers Converter</title>
+
+<!--/ /-------- Normalize CSS --------/ /-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+<!--/ /-------- Google Fonts --------/ /-->
+<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+
+<!--/ /-------- My Styles --------/ /-->
+<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1>Miles to Kilometers Converter</h1>
+
+    <div class="container top">
+        <p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+
+        <form id="convert">
+
+            <input type="text" name="distance" id="distance" placeholder="distance">
+            <input type="button" name="convertdist" value="Convert Distance" id="convert_btn">
+
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+        <h2 class="invisible"></h2>
+    </div>
+    
+    <p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+
+
+<script>
+var km = true;
+    function convertKM(){
+        var miles = parseInt(document.getElementById("distance").value);
+        var kilometers = (miles * 1.609344);
+        var answer = document.createElement("H2");
+        answer.innerHTML = `${miles} miles converts to ${kilometers.toFixed(3)} kilometers`;
+        document.getElementById("answer").appendChild(answer);
+        if (isNaN(miles)){
+            answer.innerHTML = `Enter a number you clown!`;
+
+        }
+    }
+
+    function convertM(){
+		var kilometers = parseInt(document.getElementById("distance").value);
+        var miles = (kilometers * 0.621371);
+        var answer = document.createElement("H2");
+        answer.innerHTML = `${kilometers} kilometers converts to ${miles.toFixed(3)} miles`;
+        document.getElementById("answer").appendChild(answer);
+
+        if (isNaN(kilometers)){
+            answer.innerHTML = `Enter a number you clown!`;
+        }
+    }
+
+    var header = document.querySelector("H1");
+    var directions = document.querySelector("P");
+    document.addEventListener('keydown', function(event){
+    var keyPressed = event.which;
+    switch(keyPressed){
+        case 77:header.innerHTML = "MILES TO KILOMETERS CONVERTER";
+                directions.innerHTML = "Type in a number of miles and click the button to convert the distance to kilometers.";
+                km = true;
+                console.log(km);
+                break;
+        case 75:header.innerHTML = "KILOMETERS TO MILES CONVERTER";
+                directions.innerHTML = "Type in a number of kilometers and click the button to convert the distance to miles.";
+                km = false;
+                console.log(km);
+                break;
+        //default: alert("Please press K or M for conversion");
+        }
+    });
+
+    var function_ = document.getElementById('convert_btn');
+    function_.addEventListener('click',function(params) {
+        console.log('imfired');
+        if(km == true){        
+            convertKM();   
+        }
+        else{
+            convertM();   
+        }
+    });
+</script>
+
+</body>
+</html>
