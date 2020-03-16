@@ -1,0 +1,134 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(252, 240, 224);
+    margin: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight:400;
+    text-align: center;
+    color: white;
+}
+input {display:
+    block; margin-bottom: 20px;
+}
+
+.invisible {
+    display: none;
+    
+}
+
+.visible {
+    display: block;
+    width: 320px;
+    padding: 20px;
+    font-size:.85em;
+    color: #fff;
+    text-align:left;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#myform {
+    position: absolute;
+    margin-left: 50px;
+    padding:20px;
+    align-content:center;
+
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 3px solid rgb(223, 0, 0);
+    /* border-radius: 4px; */
+    padding: 10px 10px;
+}
+
+::placeholder {
+    font-family: 'Fjalla One', sans-serif;
+    color: black;
+    text-align:center;
+    vertical-align: center;
+    font-size: 1.3em;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    display: inline;
+    background-color: black;
+    border: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    margin-bottom: 7px;
+}
+
+h1 {
+    font-size: 3em;
+    margin:0;
+    padding:0;
+    align:left;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin:0;
+    padding:0;
+    align:left;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: 
+}
+
+section{
+    background:rgb(223, 0, 0);
+    max-width:250px;
+    text-align:left;
+    padding:30px;
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(189, 189, 189);
+}
+
+/* selected link */
+a:active {
+    color: rgb(223, 0, 0);
+}
+
+footer {
+    padding:5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+    color: white;
+}
