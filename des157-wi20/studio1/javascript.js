@@ -12,12 +12,12 @@
             event.preventDefault();
 
             // get all the text fields from the form
-            var formData = document.querySelectorAll("input[type=text]");
+            const formData = document.querySelectorAll("input[type=text]");
             // create an array to hold values from the form
-            var words = [];
+            const words = [];
 
             //loop through the fields and add the words to the array, one at a time.
-            for( var i=0; i<formData.length; i++){
+            for( const i=0; i<formData.length; i++){
                 words.push(formData[i].value);    
             }
             //You can see the array in the console, if you want...
@@ -34,7 +34,7 @@
         function makeMadLib(theWords){
 
 
-            var madlib = `
+            const madlib = `
             
             <h2>THE MODEL</h2>
             
@@ -56,7 +56,7 @@
             <p>Lyrics by ${theWords[4]}</p>`.toUpperCase();
 
             //Get the madlib container
-            var mlContainer = document.getElementById('madlib');
+            const mlContainer = document.getElementById('madlib');
 
             //Change the guts of the container to your madlib
             mlContainer.innerHTML = `<p>${madlib}</p>`;
@@ -65,13 +65,13 @@
             mlContainer.setAttribute("class", "visible");
 
             //animate madlib
-        var el = document.getElementById("madlib");
+        const el = document.getElementById("madlib");
 
 function fadeIn(el, time) {
 el.style.opacity = 0;
 
-var last = +new Date();
-var tick = function() {
+const last = +new Date();
+const tick = function() {
 el.style.opacity = +el.style.opacity + (new Date() - last) / time;
 last = +new Date();
 
