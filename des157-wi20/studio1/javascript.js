@@ -71,7 +71,7 @@ function fadeIn(el, time) {
 el.style.opacity = 0;
 
 const last = +new Date();
-const tick = function() {
+let tick = function() {
 el.style.opacity = +el.style.opacity + (new Date() - last) / time;
 last = +new Date();
 
