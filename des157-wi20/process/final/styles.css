@@ -8,6 +8,7 @@ body {
   margin-bottom: 200px;
 }
 
+
 #navbar {
   background-color: #5b6aa5;
   position: fixed;
@@ -129,10 +130,10 @@ img {
 p {
   width: 100%;
   margin: 0;
-  padding: 1% 6%;
+  padding: 1% 10%;
   font-size: 1.3em;
   line-height: 1.3em;
-  color: #f6bcd5;
+  color: #5b6aa5;
 }
 
 #crenshawhov img, #hookshov img, #steinemhov img, #lordehov img {
@@ -149,15 +150,12 @@ p {
 }
 
 #pioneers {
-  /* margin-left: 10%; */
+  margin-left: 10%;
   margin-bottom: 200px;
   font-family: 'Playfair Display', serif;
-  font-weight: 400;
   font-size: 1em;
   color: #5b6aa5;
   text-decoration: none;
-  /* max-width:800px; */
-  font-weight: 700;
 }
 
 
@@ -199,7 +197,7 @@ a:hover {
 }
 
 #writing {
-  margin-left: 100px;
+  margin-left:10%;
   margin-right: 150px;
   margin-bottom: 200px;
   margin-top: -400px;
@@ -235,8 +233,8 @@ animation: fade-in 3s;
 }
 
 #writing2 {
-  margin-left: 100px;
-  margin-right: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 200px;
 }
 
@@ -253,8 +251,8 @@ animation: fade-in 3s;
 }
 
 #subscribe {
-  margin-left: 100px;
-  margin-right: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 200px;
 }
 
@@ -317,7 +315,23 @@ input {
   margin-bottom: 7px;
 }
 
+.alert{
+  text-align:center;
+  padding:10px;
+  background: #5b6aa5;
+  color:#f6bcd5;
+  margin-bottom:10px;
+  display:none;
+}
 
+#contact {
+  margin-left:10%;
+}
+
+#contact img {
+  padding:0;
+  margin-left:12%;
+}
 
 
 @media only screen and (min-width: 769px) {
