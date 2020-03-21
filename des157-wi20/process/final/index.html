@@ -9,6 +9,7 @@
             <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
             <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <script src="https://kit.fontawesome.com/2a34b16d48.js" crossorigin="anonymous"></script>
             <meta name="HandheldFriendly" content="true">
             <link rel="stylesheet" href="styles.css">
       </head>
@@ -26,6 +27,9 @@
         <a href="#writing2">Get Involved</a>
         <a href="#subscribe">Subscribe</a>
         <a href="#contact">Contact</a>
+        <a href="mailto:avvalverde@ucdavis.edu"><i class="far fa-envelope"></i></a>
+        <a href="http://www.instagram.com/amanda_01.pdf"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/amandavvalverde/"><i class="fab fa-linkedin"></i></a>
       </div>
 
       <section id="writing">
@@ -47,18 +51,10 @@
           How can I be an intersectional feminist ally?
         </h2>
 
-        <ul>
-          <li>The barriers faced by a middle class woman living in Melbourne are not the same as those of a queer woman living in rural Fiji.  Women aren’t just exposed to sexism – racism, ableism, ageism, homophobia, transphobia, and religious persecution are intrinsically linked to how diverse women experience inequality.
-
-            As a feminist movement, we need to advocate for the equality of all women – not just those who experience the same barriers as we do.
-            
-            To begin to understand the additional degrees of difficulty some women live with, it’s important to look at your own privilege. This can feel like a personal attack, but it isn’t. It’s about noting that your personal history may mean that in some way, you’ve been spared the oppression another woman may have experienced.
-            
-            You may not know what it’s like to live as a person with a disability, or have never had to deal with racism. But a woman who has may not have experienced discrimination that you have, like homophobia. Checking your privilege isn’t about creating a sliding scale of who’s worse off – it’s about learning and understanding the views of other feminists, and remembering that we’re all in this together. True equality leaves no one behind.</li>
-          <li>Privilege and oppression are not blanket terms or can be solved with a general approach</li>
-          <li>Looks at the unique experiences of individuals</li>
-          <li>Studies the privileges around gender, race, ethnicity, class, disability, religion, sexuality, etc.</li>
-        </ul>
+        <p>The barriers faced by a middle class woman living in Melbourne are not the same as those of a queer woman living in rural Fiji.  Women aren’t just exposed to sexism – racism, ableism, ageism, homophobia, transphobia, and religious persecution are intrinsically linked to how diverse women experience inequality.
+        <p>As a feminist movement, we need to advocate for the equality of all women – not just those who experience the same barriers as we do.</p>
+        <p>To begin to understand the additional degrees of difficulty some women live with, it’s important to look at your own privilege. This can feel like a personal attack, but it isn’t. It’s about noting that your personal history may mean that in some way, you’ve been spared the oppression another woman may have experienced.</p>
+        <p>You may not know what it’s like to live as a person with a disability, or have never had to deal with racism. But a woman who has may not have experienced discrimination that you have, like homophobia. Checking your privilege isn’t about creating a sliding scale of who’s worse off – it’s about learning and understanding the views of other feminists, and remembering that we’re all in this together. True equality leaves no one behind.</p>
       </div>
     </section>
 
@@ -147,16 +143,34 @@
       <h2>
         We invite you to join our mailing list for updates about local events, volunteer opportunities, further resources, and new articles or essays that will be published here. Your contact information will never be shared with third parties.
       </h2>
+
+    <div class="alert">Your information has been sent!</div>  
     <form class="sucess-none" id="newContact">
       <div class="inputs">
-          <input type="text" value="" name="FNAME" class="required name" id="name" placeholder="Name">
-          <input type="email" value="" name="EMAIL" class="required email" id="email" placeholder="E-mail">
-      </div>
+          <input type="text" value="" name="FNAME" class="required name" id="name" required placeholder="Name">
+          <input type="email" value="" name="EMAIL" class="required email" id="email" required placeholder="E-mail">
+          <input type="text" value="" name="MESSAGE" class="required email" id="message" placeholder="Comments & Questions">
+        </div>
       <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_96d9e6e519173af7bdbdab9d_23138bd741" tabindex="-1" value="">
       </div>
       <input type="submit" class="btn" value="Submit" name="subscribe" id="submitContact">
     </form>
+    </div>
+    </div>
+
+    <div id="contact">
+      <div class="hidden">
+    <h1>
+      Contact
+    </h1>
+      <img src="images/profile.jpg" alt="Amanda Valverde" height="250">
+      <h2>
+        Amanda Valverde<br>
+        Web Developer & Feminist Killjoy<br>
+        avvalverde@ucdavis.edu<br>
+      </h2>
+      <p>Feel free to contact me for design inquiries and sharing additional resources.</p>
     </div>
     </div>
     
@@ -173,6 +187,8 @@
           </ul>
         </nav>
       </footer>
+      <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js"></script>
       <script src="script.js"></script>
     </body>
   </html>
