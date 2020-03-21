@@ -1,12 +1,11 @@
 html { font-size:100%; }
 
 body {
-    background-image: url("https://live.staticflickr.com/6232/6273684096_c665fa387a_k.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgb(252, 240, 224);
+    background-color: #000000;
     margin: 0px;
     text-align: center;
     color: white;
@@ -100,7 +99,6 @@ body {
   }
 
   .one {
-    background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.1) 85%);
     padding: 10px;
     margin: 10px;
     line-height: 1;
@@ -108,7 +106,6 @@ body {
   }
 
   .two {
-    background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.1) 85%);
     padding: 10px;
     margin: 10px;
     line-height: 1;
@@ -116,7 +113,6 @@ body {
   }
 
   .three {
-    background: linear-gradient(to top left, rgb(0, 0, 0, 1) 0%, rgb(255, 255, 255, 0.0) 85%);
     padding: 10px;
     margin: 10px;
     line-height: 1;
