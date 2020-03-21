@@ -1,3 +1,17 @@
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDWjClCPD5SLMYXQb6us2LCHf_VC2CR_ts",
+  authDomain: "des157final.firebaseapp.com",
+  databaseURL: "https://des157final.firebaseio.com",
+  projectId: "des157final",
+  storageBucket: "des157final.appspot.com",
+  messagingSenderId: "839858739536",
+  appId: "1:839858739536:web:feadd9e6a6bde456a8f455"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
 (function(){
   'use strict';
 
@@ -182,6 +196,51 @@ var currentScrollPos = window.pageYOffset;
   init();
   checkPosition();
 })();
+
+// reference messages collection
+
+var messagesRef = firebase.database().ref('messages');
+
+// listen for form submit
+
+document.getElementById('newContact').addEventListener('submit',submitForm);
+
+// submit form
+function submitForm(e){
+    e.preventDefault();
+
+// get values
+var name = getInputVal('name');
+var email = getInputVal('email');
+var message = getInputVal('message');
+
+// save message
+saveMessage(name, email, message);
+
+// show alert
+document.querySelector('.alert').style.display = "block";
+
+// alert after 3 seconds
+setTimeout(function(){
+    document.querySelector('.alert').style.display = "none";
+},3000);
+}
+
+
+// function to get form values
+function getInputVal(id){
+    return document.getElementById(id).value;
+}
+
+// save message to firebase
+function saveMessage(name, email, message){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        message: message
+    });
+}
 
 
 }());
