@@ -1,0 +1,509 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+  background: #f6bcd5;
+  margin-bottom: 200px;
+}
+
+#navbar {
+  background-color: #5b6aa5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f6bcd5;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #f6bcd5;
+  color: #5b6aa5;
+}
+
+#hero {
+  margin-left: 48%;
+}
+
+h1 {
+  text-align: left;
+  width: 100%;
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0px;
+  color:#5b6aa5;
+}
+
+#desktop {
+  width: 100%;
+  margin-left:0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: margin 1.5s;
+  margin-bottom: 200px;
+}
+
+img {
+  text-align:center;
+  margin:0;
+}
+
+
+#crenshaw, #steinem, #hooks, #lorde {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2.2%;
+  justify-content: center;
+  align-content: center;
+}
+
+#crenshaw {
+
+  background-color: #f6bcd5;
+}
+
+#hooks {
+  background-color:#f6bcd5;
+}
+
+#steinem {
+  background-color: #f6bcd5;
+}
+
+#lorde {
+  background-color:#f6bcd5;
+}
+
+#overlays {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  
+}
+
+#crenshawhov, #hookshov, #steinemhov, #lordehov {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width:100%;
+  top: 15.5%;
+  left: -50%;
+  padding-bottom: 3%;
+  background: #5b6aa5;
+  transform: translateX(-50%);
+  transition: left 1.5s;
+}
+
+#crenshawhov {
+  background-color:#5b6aa5;
+}
+
+#hookshov {
+  background-color:#5b6aa5;
+}
+
+#steinemhov {
+  background-color:#5b6aa5;
+}
+
+#lordehov {
+  background-color:#5b6aa5;
+}
+
+p {
+  width: 100%;
+  margin: 0;
+  padding: 1% 6%;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  color: #f6bcd5;
+}
+
+#crenshawhov img, #hookshov img, #steinemhov img, #lordehov img {
+  margin: auto;
+  padding-top: 4%
+}
+
+#crenshawclose, #hooksclose, #steinemclose, #lordeclose {
+  color:#5b6aa5;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+
+#pioneers {
+  /* margin-left: 10%; */
+  margin-bottom: 200px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #5b6aa5;
+  text-decoration: none;
+  /* max-width:800px; */
+  font-weight: 700;
+}
+
+
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  position: fixed;
+  height:100px;
+  left: 0;
+  bottom: 0;
+  margin: 0px;
+  background-color: hsl(334, 76%, 85%, 0);
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  margin: 1% 1%;
+  width: 30%;
+}
+
+footer nav ul li a {
+  padding: 2%;
+  text-decoration: none;
+  font-size: 0.5em;
+  color: #f6bcd5;
+}
+
+a:hover {
+  color: black;
+}
+
+#writing {
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 200px;
+  margin-top: -400px;
+}
+
+#writing h1 {
+  margin-bottom: 100px;
+  margin-left: 15%
+}
+
+#writing a:link, a:visited, a:active {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1em;
+  /* padding-left: 100px; */
+  color: #5b6aa5;
+  text-decoration: none;
+  list-style-type: none;
+  max-width:800px;
+  font-weight: 700;
+}
+
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+.fade-in-element {
+animation: fade-in 3s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#writing2 {
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 200px;
+}
+
+#writing2 a:link, a:visited, a:active {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1em;
+  /* padding-left: 100px; */
+  color: #5b6aa5;
+  text-decoration: none;
+  list-style-type: none;
+  max-width:800px;
+  font-weight: 700;
+}
+
+#subscribe {
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 200px;
+}
+
+#writing2 p {
+  color: #5b6aa5;
+}
+
+
+/* form */
+#newContact {
+  display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+  /* padding:20px; */
+  align-content:left;
+
+
+}
+
+input[type=submit] {
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  /* border: none; */
+  border: 3px solid #5b6aa5;
+  background-color: hsl(334, 76%, 85%);
+  color:#5b6aa5;
+  /* border-radius: 4px; */
+  border-style: solid;
+  padding: 10px 10px;
+  align-content: center;
+  font-weight:900;
+}
+
+::placeholder {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  color: hsl(334, 76%, 85%);
+  text-align:left;
+  vertical-align: center;
+  font-size: 1em;
+}
+
+input[type=button], input[type=text], input[type=email] {
+  display: inline-block;
+  background-color: #5b6aa5;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  color: hsl(334, 76%, 85%);
+  padding: 16px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  margin-bottom: 7px;
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+  h1 {
+    text-align: left;
+    width: 90vh;
+    padding: 3% 6%;
+    font-size: 4em;
+  }
+
+  #crenshaw, #hookspic, #steinempic, #lordepic{
+    opacity: 1;
+    transition: opacity .5s;
+  }
+
+
+  #desktop {
+    max-width: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* position: absolute; */
+    width: 80%;
+    margin-left: 0;
+    transition: all 1.3s ease;
+
+    width: 50%;
+    min-height: 50%;
+    padding: 0;
+    margin-left: 300px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #crenshaw, #steinem, #hooks, #lorde {
+    display: flex;
+    align-content: center;
+    align-self:center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0px, 0px, 0px;
+    transform: scale(1);
+
+    border-radius: 0%;
+    cursor: pointer;
+
+    transition: transform .5s;
+  }
+
+  #crenshaw {
+    background-color: #5b6aa5;
+    margin: 0;
+    padding: 0, 0, 0;
+  }
+
+  #hooks {
+    background-color: #5b6aa5;
+    margin: 0;
+    padding: 0, 0, 0;
+  }
+
+  #steinem {
+    background-color: #5b6aa5;
+    margin: 0;
+    padding: 0, 0, 0;
+  }
+
+  #lorde {
+    background-color: #5b6aa5;
+    margin: 0;
+    padding: 0, 0, 0;
+  }
+
+  #crenshaw img, #hooks img, #steinem img, #lorde img {
+    margin: 0;
+    padding: 0, 0, 0;
+    opacity: 1;
+  }
+
+  #crenshaw img:hover, #hooks img:hover, #steinem img:hover, #lorde img:hover {
+    margin: 0;
+    padding: 0, 0, 0;
+    opacity: 1;
+  }
+
+  #crenshaw:hover, #hooks:hover, #steinem:hover, #lorde:hover {
+    transform: scale(1.15);
+  }
+
+  #crenshawhov, #hookshov, #steinemhov, #lordehov {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: -200%;
+    transform: translate(-50%,-40%);
+    padding: 3%;
+    border-radius: 0%;
+    transition: left 1.3s ease;
+  }
+
+  #crenshawhov p, #hookshov p, #steinemhov p, #lordehov p {
+    width: 100%;
+    padding: 5%;
+    font-size: 1em;
+  }
+
+  #crenshawhov img, #hookshov img, #steinemhov img, #lordehov img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0, 0, 0;
+  }
+
+  #crenshawhov {
+    background-color: #5b6aa5;
+  }
+
+  #hookshov {
+    background-color:#5b6aa5;
+  }
+
+  #steinemhov {
+    background-color:#5b6aa5;
+  }
+
+  #lordehov {
+    background-color: #5b6aa5;
+  }
+
+  footer {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  footer nav ul li {
+    margin: 3% 0.5% 1%;
+    width: 15%;
+  }
+
+  footer nav ul li a {
+    padding: 0%;
+    color: #5b6aa5;
+  }
+}
+
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4em;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 2em;
+    font-style: italic;
+    color: #5b6aa5;
+    padding-left: 100px;
+  }
+
+  ol {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-left: 100px;
+    color: #5b6aa5;
+    text-decoration: none;
+  }
+
+  ul {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-left: 100px;
+    color: #5b6aa5;
+    text-decoration: none;
+    list-style: none;
+  }
+
+
