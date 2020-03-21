@@ -127,6 +127,13 @@ img {
   background-color:#5b6aa5;
 }
 
+#crenshawhov p, #hookshov p, #steinemhov p, #lordehov p {
+  width: 100%;
+  padding: 5%;
+  font-size: 1em;
+  color: #f6bcd5;
+}
+
 p {
   width: 100%;
   margin: 0;
